@@ -6,6 +6,8 @@ PingVault 可協助調整遊戲程序優先權、降低背景程序負載，並�
 
 > PingVault 不是 VPN，也不會改變遊戲伺服器位置。實際延遲仍取決於 ISP 與遊戲伺服器位置。
 
+![PingVault 加速中心](docs/images/pingvault-dashboard.png)
+
 ## 一鍵下載
 
 [![下載 PingVault](https://img.shields.io/badge/Windows%20下載-PingVault%20Setup-blue?style=for-the-badge&logo=windows)](https://github.com/yogaliu0818/PingVault/releases/latest/download/PingVault-Setup.exe)
