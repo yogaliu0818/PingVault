@@ -1,0 +1,307 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+GAMES_PATH = ROOT / "pingvault" / "data" / "games.json"
+
+NEW_GAMES = [
+    {
+        "id": "wutheringwaves",
+        "name": "Wuthering Waves",
+        "genre": "Action RPG",
+        "process_names": ["Client-Win64-Shipping.exe", "Wuthering Waves.exe"],
+        "ping_host": "wutheringwaves.kurogame.com",
+        "color": "#5B8DEF",
+    },
+    {
+        "id": "mhwwilds",
+        "name": "Monster Hunter Wilds",
+        "genre": "Action RPG",
+        "process_names": ["MonsterHunterWilds.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#A1887F",
+    },
+    {
+        "id": "poe2",
+        "name": "Path of Exile 2",
+        "genre": "Action RPG",
+        "process_names": ["PathOfExile2.exe", "PathOfExileTwo.exe", "PathOfExile2_x64.exe"],
+        "ping_host": "pathofexile.com",
+        "color": "#8D6E63",
+    },
+    {
+        "id": "deadlock",
+        "name": "Deadlock",
+        "genre": "MOBA",
+        "process_names": ["deadlock.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#FF7043",
+    },
+    {
+        "id": "warzone",
+        "name": "Call of Duty: Warzone",
+        "genre": "Battle Royale",
+        "process_names": ["cod.exe", "ModernWarfare.exe", "cod24.exe"],
+        "ping_host": "callofduty.com",
+        "color": "#43A047",
+    },
+    {
+        "id": "seaofthieves",
+        "name": "Sea of Thieves",
+        "genre": "Adventure",
+        "process_names": ["SoTGame.exe"],
+        "ping_host": "seaofthieves.com",
+        "color": "#0296C3",
+    },
+    {
+        "id": "valheim",
+        "name": "Valheim",
+        "genre": "Survival",
+        "process_names": ["valheim.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#5D8A4D",
+    },
+    {
+        "id": "huntshowdown",
+        "name": "Hunt: Showdown",
+        "genre": "FPS",
+        "process_names": ["HuntGame.exe", "Hunt-Win64-Shipping.exe"],
+        "ping_host": "huntshowdown.com",
+        "color": "#B71C1C",
+    },
+    {
+        "id": "deeprock",
+        "name": "Deep Rock Galactic",
+        "genre": "FPS",
+        "process_names": ["FSD-Win64-Shipping.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#F9A825",
+    },
+    {
+        "id": "oncehuman",
+        "name": "Once Human",
+        "genre": "Survival",
+        "process_names": ["ONCE_HUMAN.exe", "OnceHuman.exe"],
+        "ping_host": "www.oncehuman.game",
+        "color": "#26C6DA",
+    },
+    {
+        "id": "firstdescendant",
+        "name": "The First Descendant",
+        "genre": "Action RPG",
+        "process_names": ["TheFirstDescendant.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#7E57C2",
+    },
+    {
+        "id": "fragpunk",
+        "name": "FragPunk",
+        "genre": "FPS",
+        "process_names": ["FragPunk.exe", "FragPunkClient-Win64-Shipping.exe"],
+        "ping_host": "fragpunk.com",
+        "color": "#FF5722",
+    },
+    {
+        "id": "arenabreakout",
+        "name": "Arena Breakout: Infinite",
+        "genre": "FPS",
+        "process_names": ["ArenaBreakoutInfinite.exe", "ABI-Win64-Shipping.exe"],
+        "ping_host": "arenabreakoutinfinite.com",
+        "color": "#546E7A",
+    },
+    {
+        "id": "maplestory",
+        "name": "MapleStory",
+        "genre": "MMORPG",
+        "process_names": ["MapleStory.exe"],
+        "ping_host": "maplestory.nexon.com",
+        "color": "#FF8A65",
+    },
+    {
+        "id": "blackdesert",
+        "name": "Black Desert",
+        "genre": "MMORPG",
+        "process_names": ["BlackDesert64.exe", "BlackDesert.exe"],
+        "ping_host": "www.blackdesertfoundry.com",
+        "color": "#6D4C41",
+    },
+    {
+        "id": "gw2",
+        "name": "Guild Wars 2",
+        "genre": "MMORPG",
+        "process_names": ["Gw2-64.exe", "Gw2.exe"],
+        "ping_host": "guildwars2.com",
+        "color": "#C62828",
+    },
+    {
+        "id": "stardew",
+        "name": "Stardew Valley",
+        "genre": "Simulation",
+        "process_names": ["Stardew Valley.exe"],
+        "ping_host": "stardewvalley.net",
+        "color": "#81C784",
+    },
+    {
+        "id": "terraria",
+        "name": "Terraria",
+        "genre": "Sandbox",
+        "process_names": ["Terraria.exe"],
+        "ping_host": "terraria.org",
+        "color": "#7E57C2",
+    },
+    {
+        "id": "hades2",
+        "name": "Hades II",
+        "genre": "Action RPG",
+        "process_names": ["Hades2.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#E53935",
+    },
+    {
+        "id": "forza5",
+        "name": "Forza Horizon 5",
+        "genre": "Racing",
+        "process_names": ["ForzaHorizon5.exe"],
+        "ping_host": "forzamotorsport.net",
+        "color": "#FF6F00",
+    },
+    {
+        "id": "nba2k",
+        "name": "NBA 2K",
+        "genre": "Sports",
+        "process_names": ["NBA2K25.exe", "NBA2K26.exe", "NBA2K24.exe"],
+        "ping_host": "nba.2k.com",
+        "color": "#F44336",
+    },
+    {
+        "id": "mk1",
+        "name": "Mortal Kombat 1",
+        "genre": "Fighting",
+        "process_names": ["Mk1.exe", "MortalKombat1.exe"],
+        "ping_host": "mortalkombat.com",
+        "color": "#B71C1C",
+    },
+    {
+        "id": "ggst",
+        "name": "Guilty Gear Strive",
+        "genre": "Fighting",
+        "process_names": ["GGST.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#EC407A",
+    },
+    {
+        "id": "sc2",
+        "name": "StarCraft II",
+        "genre": "Strategy",
+        "process_names": ["SC2_x64.exe", "SC2.exe"],
+        "ping_host": "battle.net",
+        "color": "#1565C0",
+    },
+    {
+        "id": "aoe4",
+        "name": "Age of Empires IV",
+        "genre": "Strategy",
+        "process_names": ["RelicCardinal.exe"],
+        "ping_host": "ageofempires.com",
+        "color": "#FFB300",
+    },
+    {
+        "id": "dayz",
+        "name": "DayZ",
+        "genre": "Survival",
+        "process_names": ["DayZ_x64.exe", "DayZ.exe"],
+        "ping_host": "dayz.com",
+        "color": "#8D6E63",
+    },
+    {
+        "id": "readyornot",
+        "name": "Ready or Not",
+        "genre": "FPS",
+        "process_names": ["ReadyOrNotSteam.exe", "ReadyOrNot.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#37474F",
+    },
+    {
+        "id": "balatro",
+        "name": "Balatro",
+        "genre": "Strategy",
+        "process_names": ["Balatro.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#E53935",
+    },
+    {
+        "id": "satisfactory",
+        "name": "Satisfactory",
+        "genre": "Simulation",
+        "process_names": ["FactoryGameSteam.exe", "FactoryGame.exe"],
+        "ping_host": "satisfactorygame.com",
+        "color": "#F9A825",
+    },
+    {
+        "id": "nomanssky",
+        "name": "No Man's Sky",
+        "genre": "Adventure",
+        "process_names": ["NMS.exe"],
+        "ping_host": "nomanssky.com",
+        "color": "#00ACC1",
+    },
+    {
+        "id": "identityv",
+        "name": "Identity V",
+        "genre": "Horror",
+        "process_names": ["dwrg.exe", "IdentityV.exe"],
+        "ping_host": "idv.163.com",
+        "color": "#5C6BC0",
+    },
+    {
+        "id": "honkai3",
+        "name": "Honkai Impact 3rd",
+        "genre": "Action RPG",
+        "process_names": ["BH3.exe"],
+        "ping_host": "hoyoverse.com",
+        "color": "#EC407A",
+    },
+    {
+        "id": "smite2",
+        "name": "Smite 2",
+        "genre": "MOBA",
+        "process_names": ["Smite2.exe"],
+        "ping_host": "smite2.com",
+        "color": "#29B6F6",
+    },
+    {
+        "id": "brawlhalla",
+        "name": "Brawlhalla",
+        "genre": "Fighting",
+        "process_names": ["Brawlhalla.exe"],
+        "ping_host": "brawlhalla.com",
+        "color": "#FFA000",
+    },
+    {
+        "id": "contentwarning",
+        "name": "Content Warning",
+        "genre": "Horror",
+        "process_names": ["Content Warning.exe"],
+        "ping_host": "steamcommunity.com",
+        "color": "#AB47BC",
+    },
+]
+
+
+def main() -> None:
+    games = json.loads(GAMES_PATH.read_text(encoding="utf-8"))
+    existing = {g["id"] for g in games}
+    added = [g for g in NEW_GAMES if g["id"] not in existing]
+    games.extend(added)
+    GAMES_PATH.write_text(
+        json.dumps(games, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print(f"added {len(added)} · total {len(games)}")
+    print(",".join(g["id"] for g in added))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,946 @@
+[
+  {
+    "id": "valorant",
+    "name": "Valorant",
+    "genre": "FPS",
+    "process_names": [
+      "VALORANT-Win64-Shipping.exe",
+      "VALORANT.exe"
+    ],
+    "ping_host": "dynamodb.us-west-2.amazonaws.com",
+    "color": "#FF4655"
+  },
+  {
+    "id": "lol",
+    "name": "League of Legends",
+    "genre": "MOBA",
+    "process_names": [
+      "LeagueClient.exe",
+      "League of Legends.exe"
+    ],
+    "ping_host": "riotgames.com",
+    "color": "#C8AA6E"
+  },
+  {
+    "id": "tft",
+    "name": "Teamfight Tactics",
+    "genre": "Strategy",
+    "process_names": [
+      "LeagueClient.exe",
+      "TFT.exe"
+    ],
+    "ping_host": "riotgames.com",
+    "color": "#5B8DEF"
+  },
+  {
+    "id": "cs2",
+    "name": "Counter-Strike 2",
+    "genre": "FPS",
+    "process_names": [
+      "cs2.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#DE9B35"
+  },
+  {
+    "id": "apex",
+    "name": "Apex Legends",
+    "genre": "Battle Royale",
+    "process_names": [
+      "r5apex.exe",
+      "r5apex_dx12.exe"
+    ],
+    "ping_host": "ea.com",
+    "color": "#DA292A"
+  },
+  {
+    "id": "fortnite",
+    "name": "Fortnite",
+    "genre": "Battle Royale",
+    "process_names": [
+      "FortniteClient-Win64-Shipping.exe"
+    ],
+    "ping_host": "epicgames.com",
+    "color": "#9D4DBB"
+  },
+  {
+    "id": "genshin",
+    "name": "Genshin Impact",
+    "genre": "RPG",
+    "process_names": [
+      "GenshinImpact.exe",
+      "YuanShen.exe"
+    ],
+    "ping_host": "hoyoverse.com",
+    "color": "#4FC3F7"
+  },
+  {
+    "id": "hsr",
+    "name": "Honkai: Star Rail",
+    "genre": "RPG",
+    "process_names": [
+      "StarRail.exe"
+    ],
+    "ping_host": "hoyoverse.com",
+    "color": "#6C5CE7"
+  },
+  {
+    "id": "zzz",
+    "name": "Zenless Zone Zero",
+    "genre": "Action RPG",
+    "process_names": [
+      "ZenlessZoneZero.exe"
+    ],
+    "ping_host": "hoyoverse.com",
+    "color": "#FFD166"
+  },
+  {
+    "id": "pubg",
+    "name": "PUBG: Battlegrounds",
+    "genre": "Battle Royale",
+    "process_names": [
+      "TslGame.exe"
+    ],
+    "ping_host": "pubg.com",
+    "color": "#F2A900"
+  },
+  {
+    "id": "overwatch2",
+    "name": "Overwatch 2",
+    "genre": "FPS",
+    "process_names": [
+      "Overwatch.exe"
+    ],
+    "ping_host": "battle.net",
+    "color": "#F99E1A"
+  },
+  {
+    "id": "dota2",
+    "name": "Dota 2",
+    "genre": "MOBA",
+    "process_names": [
+      "dota2.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#C23C2A"
+  },
+  {
+    "id": "roblox",
+    "name": "Roblox",
+    "genre": "Sandbox",
+    "process_names": [
+      "RobloxPlayerBeta.exe",
+      "RobloxPlayer.exe"
+    ],
+    "ping_host": "roblox.com",
+    "color": "#E2231A"
+  },
+  {
+    "id": "minecraft",
+    "name": "Minecraft",
+    "genre": "Sandbox",
+    "process_names": [
+      "javaw.exe",
+      "Minecraft.Windows.exe"
+    ],
+    "ping_host": "minecraft.net",
+    "color": "#5D9C3E"
+  },
+  {
+    "id": "gta5",
+    "name": "GTA V / GTA Online",
+    "genre": "Action",
+    "process_names": [
+      "GTA5.exe",
+      "GTA5_Enhanced.exe"
+    ],
+    "ping_host": "rockstargames.com",
+    "color": "#FCAF17"
+  },
+  {
+    "id": "rdr2",
+    "name": "Red Dead Redemption 2",
+    "genre": "Action",
+    "process_names": [
+      "RDR2.exe",
+      "PlayRDR2.exe"
+    ],
+    "ping_host": "rockstargames.com",
+    "color": "#8B1E1E"
+  },
+  {
+    "id": "cod",
+    "name": "Call of Duty",
+    "genre": "FPS",
+    "process_names": [
+      "cod.exe",
+      "ModernWarfare.exe",
+      "cod24.exe"
+    ],
+    "ping_host": "callofduty.com",
+    "color": "#4CAF50"
+  },
+  {
+    "id": "r6",
+    "name": "Rainbow Six Siege",
+    "genre": "FPS",
+    "process_names": [
+      "RainbowSix.exe",
+      "RainbowSix_Vulkan.exe"
+    ],
+    "ping_host": "ubisoft.com",
+    "color": "#4A90D9"
+  },
+  {
+    "id": "destiny2",
+    "name": "Destiny 2",
+    "genre": "FPS",
+    "process_names": [
+      "destiny2.exe"
+    ],
+    "ping_host": "bungie.net",
+    "color": "#1E88E5"
+  },
+  {
+    "id": "thefinals",
+    "name": "THE FINALS",
+    "genre": "FPS",
+    "process_names": [
+      "Discovery.exe",
+      "TheFinals.exe"
+    ],
+    "ping_host": "embark-studios.com",
+    "color": "#FF4D00"
+  },
+  {
+    "id": "marvelrivals",
+    "name": "Marvel Rivals",
+    "genre": "FPS",
+    "process_names": [
+      "Marvel-Win64-Shipping.exe",
+      "MarvelRivals.exe"
+    ],
+    "ping_host": "marvelrivals.com",
+    "color": "#E23636"
+  },
+  {
+    "id": "deltaforce",
+    "name": "Delta Force",
+    "genre": "FPS",
+    "process_names": [
+      "DeltaForceClient-Win64-Shipping.exe",
+      "DeltaForce.exe"
+    ],
+    "ping_host": "deltaforce.garena.com",
+    "color": "#2E7D32"
+  },
+  {
+    "id": "tarkov",
+    "name": "Escape from Tarkov",
+    "genre": "FPS",
+    "process_names": [
+      "EscapeFromTarkov.exe",
+      "EscapeFromTarkov_BE.exe"
+    ],
+    "ping_host": "escapefromtarkov.com",
+    "color": "#9E9E9E"
+  },
+  {
+    "id": "helldivers2",
+    "name": "Helldivers 2",
+    "genre": "FPS",
+    "process_names": [
+      "helldivers2.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#F4C430"
+  },
+  {
+    "id": "rocketleague",
+    "name": "Rocket League",
+    "genre": "Sports",
+    "process_names": [
+      "RocketLeague.exe"
+    ],
+    "ping_host": "epicgames.com",
+    "color": "#0078F2"
+  },
+  {
+    "id": "eafc",
+    "name": "EA Sports FC",
+    "genre": "Sports",
+    "process_names": [
+      "FC25.exe",
+      "FC26.exe",
+      "FIFA.exe"
+    ],
+    "ping_host": "ea.com",
+    "color": "#00A3FF"
+  },
+  {
+    "id": "dbd",
+    "name": "Dead by Daylight",
+    "genre": "Horror",
+    "process_names": [
+      "DeadByDaylight-Win64-Shipping.exe"
+    ],
+    "ping_host": "bhvr.com",
+    "color": "#E10600"
+  },
+  {
+    "id": "phasmophobia",
+    "name": "Phasmophobia",
+    "genre": "Horror",
+    "process_names": [
+      "Phasmophobia.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#6B5B95"
+  },
+  {
+    "id": "wow",
+    "name": "World of Warcraft",
+    "genre": "MMORPG",
+    "process_names": [
+      "Wow.exe",
+      "WowClassic.exe"
+    ],
+    "ping_host": "battle.net",
+    "color": "#00AEFF"
+  },
+  {
+    "id": "ffxiv",
+    "name": "Final Fantasy XIV",
+    "genre": "MMORPG",
+    "process_names": [
+      "ffxiv_dx11.exe",
+      "ffxiv.exe"
+    ],
+    "ping_host": "finalfantasyxiv.com",
+    "color": "#1B6CA8"
+  },
+  {
+    "id": "lostark",
+    "name": "Lost Ark",
+    "genre": "MMORPG",
+    "process_names": [
+      "LOSTARK.exe"
+    ],
+    "ping_host": "playlostark.com",
+    "color": "#C9A227"
+  },
+  {
+    "id": "throneandliberty",
+    "name": "Throne and Liberty",
+    "genre": "MMORPG",
+    "process_names": [
+      "TL.exe",
+      "ThroneAndLiberty.exe"
+    ],
+    "ping_host": "playthroneandliberty.com",
+    "color": "#7E57C2"
+  },
+  {
+    "id": "newworld",
+    "name": "New World",
+    "genre": "MMORPG",
+    "process_names": [
+      "NewWorld.exe"
+    ],
+    "ping_host": "newworld.com",
+    "color": "#C62828"
+  },
+  {
+    "id": "eldenring",
+    "name": "Elden Ring",
+    "genre": "Action RPG",
+    "process_names": [
+      "eldenring.exe",
+      "start_protected_game.exe"
+    ],
+    "ping_host": "bandainamcoent.com",
+    "color": "#C4A35A"
+  },
+  {
+    "id": "wukong",
+    "name": "Black Myth: Wukong",
+    "genre": "Action RPG",
+    "process_names": [
+      "b1-Win64-Shipping.exe",
+      "BlackMythWukong.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#D4AF37"
+  },
+  {
+    "id": "bg3",
+    "name": "Baldur's Gate 3",
+    "genre": "RPG",
+    "process_names": [
+      "bg3.exe",
+      "bg3_dx11.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#8B0000"
+  },
+  {
+    "id": "cyberpunk",
+    "name": "Cyberpunk 2077",
+    "genre": "RPG",
+    "process_names": [
+      "Cyberpunk2077.exe"
+    ],
+    "ping_host": "cyberpunk.net",
+    "color": "#FCEE0A"
+  },
+  {
+    "id": "diablo4",
+    "name": "Diablo IV",
+    "genre": "Action RPG",
+    "process_names": [
+      "Diablo IV.exe",
+      "DiabloIV.exe"
+    ],
+    "ping_host": "battle.net",
+    "color": "#A61C1C"
+  },
+  {
+    "id": "poe",
+    "name": "Path of Exile",
+    "genre": "Action RPG",
+    "process_names": [
+      "PathOfExile.exe",
+      "PathOfExile_x64.exe",
+      "PathOfExileSteam.exe"
+    ],
+    "ping_host": "pathofexile.com",
+    "color": "#B8860B"
+  },
+  {
+    "id": "warframe",
+    "name": "Warframe",
+    "genre": "Action RPG",
+    "process_names": [
+      "Warframe.x64.exe",
+      "Warframe.exe"
+    ],
+    "ping_host": "warframe.com",
+    "color": "#00E5FF"
+  },
+  {
+    "id": "mhw",
+    "name": "Monster Hunter: World",
+    "genre": "Action RPG",
+    "process_names": [
+      "MonsterHunterWorld.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#8D6E63"
+  },
+  {
+    "id": "palworld",
+    "name": "Palworld",
+    "genre": "Survival",
+    "process_names": [
+      "Palworld-Win64-Shipping.exe",
+      "Palworld.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#42A5F5"
+  },
+  {
+    "id": "rust",
+    "name": "Rust",
+    "genre": "Survival",
+    "process_names": [
+      "RustClient.exe",
+      "Rust.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#CE422B"
+  },
+  {
+    "id": "ark",
+    "name": "ARK: Survival Ascended",
+    "genre": "Survival",
+    "process_names": [
+      "ArkAscended.exe",
+      "ArkAscendedShop.exe"
+    ],
+    "ping_host": "survivetheark.com",
+    "color": "#26A69A"
+  },
+  {
+    "id": "lethalcompany",
+    "name": "Lethal Company",
+    "genre": "Horror",
+    "process_names": [
+      "Lethal Company.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#FF7043"
+  },
+  {
+    "id": "naraka",
+    "name": "NARAKA: BLADEPOINT",
+    "genre": "Battle Royale",
+    "process_names": [
+      "NarakaBladepoint.exe"
+    ],
+    "ping_host": "narakathegame.com",
+    "color": "#EF5350"
+  },
+  {
+    "id": "sf6",
+    "name": "Street Fighter 6",
+    "genre": "Fighting",
+    "process_names": [
+      "StreetFighter6.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#E53935"
+  },
+  {
+    "id": "tekken8",
+    "name": "TEKKEN 8",
+    "genre": "Fighting",
+    "process_names": [
+      "Polaris-Win64-Shipping.exe",
+      "Tekken8.exe"
+    ],
+    "ping_host": "bandainamcoent.com",
+    "color": "#FF1744"
+  },
+  {
+    "id": "osu",
+    "name": "osu!",
+    "genre": "Rhythm",
+    "process_names": [
+      "osu!.exe"
+    ],
+    "ping_host": "osu.ppy.sh",
+    "color": "#FF66AB"
+  },
+  {
+    "id": "amongus",
+    "name": "Among Us",
+    "genre": "Party",
+    "process_names": [
+      "Among Us.exe"
+    ],
+    "ping_host": "innersloth.com",
+    "color": "#C51111"
+  },
+  {
+    "id": "fallguys",
+    "name": "Fall Guys",
+    "genre": "Party",
+    "process_names": [
+      "FallGuys_client_game.exe",
+      "FallGuys.exe"
+    ],
+    "ping_host": "epicgames.com",
+    "color": "#FF6EC7"
+  },
+  {
+    "id": "tf2",
+    "name": "Team Fortress 2",
+    "genre": "FPS",
+    "process_names": [
+      "tf_win64.exe",
+      "hl2.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#E35D14"
+  },
+  {
+    "id": "l4d2",
+    "name": "Left 4 Dead 2",
+    "genre": "FPS",
+    "process_names": [
+      "left4dead2.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#8B0000"
+  },
+  {
+    "id": "battlefield",
+    "name": "Battlefield 2042",
+    "genre": "FPS",
+    "process_names": [
+      "bf2042.exe",
+      "Battlefield2042.exe"
+    ],
+    "ping_host": "ea.com",
+    "color": "#1E88E5"
+  },
+  {
+    "id": "wutheringwaves",
+    "name": "Wuthering Waves",
+    "genre": "Action RPG",
+    "process_names": [
+      "Client-Win64-Shipping.exe",
+      "Wuthering Waves.exe"
+    ],
+    "ping_host": "wutheringwaves.kurogame.com",
+    "color": "#5B8DEF"
+  },
+  {
+    "id": "mhwwilds",
+    "name": "Monster Hunter Wilds",
+    "genre": "Action RPG",
+    "process_names": [
+      "MonsterHunterWilds.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#A1887F"
+  },
+  {
+    "id": "poe2",
+    "name": "Path of Exile 2",
+    "genre": "Action RPG",
+    "process_names": [
+      "PathOfExile2.exe",
+      "PathOfExileTwo.exe",
+      "PathOfExile2_x64.exe"
+    ],
+    "ping_host": "pathofexile.com",
+    "color": "#8D6E63"
+  },
+  {
+    "id": "deadlock",
+    "name": "Deadlock",
+    "genre": "MOBA",
+    "process_names": [
+      "deadlock.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#FF7043"
+  },
+  {
+    "id": "warzone",
+    "name": "Call of Duty: Warzone",
+    "genre": "Battle Royale",
+    "process_names": [
+      "cod.exe",
+      "ModernWarfare.exe",
+      "cod24.exe"
+    ],
+    "ping_host": "callofduty.com",
+    "color": "#43A047"
+  },
+  {
+    "id": "seaofthieves",
+    "name": "Sea of Thieves",
+    "genre": "Adventure",
+    "process_names": [
+      "SoTGame.exe"
+    ],
+    "ping_host": "seaofthieves.com",
+    "color": "#0296C3"
+  },
+  {
+    "id": "valheim",
+    "name": "Valheim",
+    "genre": "Survival",
+    "process_names": [
+      "valheim.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#5D8A4D"
+  },
+  {
+    "id": "huntshowdown",
+    "name": "Hunt: Showdown",
+    "genre": "FPS",
+    "process_names": [
+      "HuntGame.exe",
+      "Hunt-Win64-Shipping.exe"
+    ],
+    "ping_host": "huntshowdown.com",
+    "color": "#B71C1C"
+  },
+  {
+    "id": "deeprock",
+    "name": "Deep Rock Galactic",
+    "genre": "FPS",
+    "process_names": [
+      "FSD-Win64-Shipping.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#F9A825"
+  },
+  {
+    "id": "oncehuman",
+    "name": "Once Human",
+    "genre": "Survival",
+    "process_names": [
+      "ONCE_HUMAN.exe",
+      "OnceHuman.exe"
+    ],
+    "ping_host": "www.oncehuman.game",
+    "color": "#26C6DA"
+  },
+  {
+    "id": "firstdescendant",
+    "name": "The First Descendant",
+    "genre": "Action RPG",
+    "process_names": [
+      "TheFirstDescendant.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#7E57C2"
+  },
+  {
+    "id": "fragpunk",
+    "name": "FragPunk",
+    "genre": "FPS",
+    "process_names": [
+      "FragPunk.exe",
+      "FragPunkClient-Win64-Shipping.exe"
+    ],
+    "ping_host": "fragpunk.com",
+    "color": "#FF5722"
+  },
+  {
+    "id": "arenabreakout",
+    "name": "Arena Breakout: Infinite",
+    "genre": "FPS",
+    "process_names": [
+      "ArenaBreakoutInfinite.exe",
+      "ABI-Win64-Shipping.exe"
+    ],
+    "ping_host": "arenabreakoutinfinite.com",
+    "color": "#546E7A"
+  },
+  {
+    "id": "maplestory",
+    "name": "MapleStory",
+    "genre": "MMORPG",
+    "process_names": [
+      "MapleStory.exe"
+    ],
+    "ping_host": "maplestory.nexon.com",
+    "color": "#FF8A65"
+  },
+  {
+    "id": "blackdesert",
+    "name": "Black Desert",
+    "genre": "MMORPG",
+    "process_names": [
+      "BlackDesert64.exe",
+      "BlackDesert.exe"
+    ],
+    "ping_host": "www.blackdesertfoundry.com",
+    "color": "#6D4C41"
+  },
+  {
+    "id": "gw2",
+    "name": "Guild Wars 2",
+    "genre": "MMORPG",
+    "process_names": [
+      "Gw2-64.exe",
+      "Gw2.exe"
+    ],
+    "ping_host": "guildwars2.com",
+    "color": "#C62828"
+  },
+  {
+    "id": "stardew",
+    "name": "Stardew Valley",
+    "genre": "Simulation",
+    "process_names": [
+      "Stardew Valley.exe"
+    ],
+    "ping_host": "stardewvalley.net",
+    "color": "#81C784"
+  },
+  {
+    "id": "terraria",
+    "name": "Terraria",
+    "genre": "Sandbox",
+    "process_names": [
+      "Terraria.exe"
+    ],
+    "ping_host": "terraria.org",
+    "color": "#7E57C2"
+  },
+  {
+    "id": "hades2",
+    "name": "Hades II",
+    "genre": "Action RPG",
+    "process_names": [
+      "Hades2.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#E53935"
+  },
+  {
+    "id": "forza5",
+    "name": "Forza Horizon 5",
+    "genre": "Racing",
+    "process_names": [
+      "ForzaHorizon5.exe"
+    ],
+    "ping_host": "forzamotorsport.net",
+    "color": "#FF6F00"
+  },
+  {
+    "id": "nba2k",
+    "name": "NBA 2K",
+    "genre": "Sports",
+    "process_names": [
+      "NBA2K25.exe",
+      "NBA2K26.exe",
+      "NBA2K24.exe"
+    ],
+    "ping_host": "nba.2k.com",
+    "color": "#F44336"
+  },
+  {
+    "id": "mk1",
+    "name": "Mortal Kombat 1",
+    "genre": "Fighting",
+    "process_names": [
+      "Mk1.exe",
+      "MortalKombat1.exe"
+    ],
+    "ping_host": "mortalkombat.com",
+    "color": "#B71C1C"
+  },
+  {
+    "id": "ggst",
+    "name": "Guilty Gear Strive",
+    "genre": "Fighting",
+    "process_names": [
+      "GGST.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#EC407A"
+  },
+  {
+    "id": "sc2",
+    "name": "StarCraft II",
+    "genre": "Strategy",
+    "process_names": [
+      "SC2_x64.exe",
+      "SC2.exe"
+    ],
+    "ping_host": "battle.net",
+    "color": "#1565C0"
+  },
+  {
+    "id": "aoe4",
+    "name": "Age of Empires IV",
+    "genre": "Strategy",
+    "process_names": [
+      "RelicCardinal.exe"
+    ],
+    "ping_host": "ageofempires.com",
+    "color": "#FFB300"
+  },
+  {
+    "id": "dayz",
+    "name": "DayZ",
+    "genre": "Survival",
+    "process_names": [
+      "DayZ_x64.exe",
+      "DayZ.exe"
+    ],
+    "ping_host": "dayz.com",
+    "color": "#8D6E63"
+  },
+  {
+    "id": "readyornot",
+    "name": "Ready or Not",
+    "genre": "FPS",
+    "process_names": [
+      "ReadyOrNotSteam.exe",
+      "ReadyOrNot.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#37474F"
+  },
+  {
+    "id": "balatro",
+    "name": "Balatro",
+    "genre": "Strategy",
+    "process_names": [
+      "Balatro.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#E53935"
+  },
+  {
+    "id": "satisfactory",
+    "name": "Satisfactory",
+    "genre": "Simulation",
+    "process_names": [
+      "FactoryGameSteam.exe",
+      "FactoryGame.exe"
+    ],
+    "ping_host": "satisfactorygame.com",
+    "color": "#F9A825"
+  },
+  {
+    "id": "nomanssky",
+    "name": "No Man's Sky",
+    "genre": "Adventure",
+    "process_names": [
+      "NMS.exe"
+    ],
+    "ping_host": "nomanssky.com",
+    "color": "#00ACC1"
+  },
+  {
+    "id": "identityv",
+    "name": "Identity V",
+    "genre": "Horror",
+    "process_names": [
+      "dwrg.exe",
+      "IdentityV.exe"
+    ],
+    "ping_host": "idv.163.com",
+    "color": "#5C6BC0"
+  },
+  {
+    "id": "honkai3",
+    "name": "Honkai Impact 3rd",
+    "genre": "Action RPG",
+    "process_names": [
+      "BH3.exe"
+    ],
+    "ping_host": "hoyoverse.com",
+    "color": "#EC407A"
+  },
+  {
+    "id": "smite2",
+    "name": "Smite 2",
+    "genre": "MOBA",
+    "process_names": [
+      "Smite2.exe"
+    ],
+    "ping_host": "smite2.com",
+    "color": "#29B6F6"
+  },
+  {
+    "id": "brawlhalla",
+    "name": "Brawlhalla",
+    "genre": "Fighting",
+    "process_names": [
+      "Brawlhalla.exe"
+    ],
+    "ping_host": "brawlhalla.com",
+    "color": "#FFA000"
+  },
+  {
+    "id": "contentwarning",
+    "name": "Content Warning",
+    "genre": "Horror",
+    "process_names": [
+      "Content Warning.exe"
+    ],
+    "ping_host": "steamcommunity.com",
+    "color": "#AB47BC"
+  }
+]
