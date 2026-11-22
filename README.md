@@ -76,6 +76,8 @@ PingVault 主要改善本機資源與網路堆疊狀態，不保證降低所有�
 
 PingVault 使用 MIT License。正式 Windows 發行版將透過自動化建置流程簽章，簽章狀態與驗證方式請參考 [Code signing policy](docs/code-signing-policy.md)。
 
+隱私政策：[Privacy Policy](docs/privacy.md)
+
 ## 開發與打包
 
 安裝開發依賴並啟動：
