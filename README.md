@@ -72,6 +72,10 @@ PingVault 主要改善本機資源與網路堆疊狀態，不保證降低所有�
 
 詳細操作方式請參考 [使用說明書](使用說明書.md)。
 
+## 程式碼簽章政策
+
+PingVault 使用 MIT License。正式 Windows 發行版將透過自動化建置流程簽章，簽章狀態與驗證方式請參考 [Code signing policy](docs/code-signing-policy.md)。
+
 ## 開發與打包
 
 安裝開發依賴並啟動：
