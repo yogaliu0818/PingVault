@@ -1,0 +1,31 @@
+name: Bug report
+description: 回報可重現的問題
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: PingVault 版本
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟
+      description: 請列出能穩定重現問題的步驟。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 錯誤訊息或 Log
+      description: 請先移除個資、Token 與密碼。

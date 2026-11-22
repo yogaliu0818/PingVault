@@ -8,7 +8,7 @@ PingVault 可協助調整遊戲程序優先權、降低背景程序負載，並�
 
 ## 一鍵下載
 
-[![下載 PingVault](https://img.shields.io/badge/Windows%20下載-PingVault%20Setup-blue?style=for-the-badge&logo=windows)](https://github.com/yogaliu0818/PingVault/releases/latest/download/PingVault-Setup-1.0.0.exe)
+[![下載 PingVault](https://img.shields.io/badge/Windows%20下載-PingVault%20Setup-blue?style=for-the-badge&logo=windows)](https://github.com/yogaliu0818/PingVault/releases/latest/download/PingVault-Setup.exe)
 
 或前往 [最新版本 Releases](https://github.com/yogaliu0818/PingVault/releases/latest)。
 
@@ -30,7 +30,7 @@ PingVault 可協助調整遊戲程序優先權、降低背景程序負載，並�
 ## 安裝
 
 1. 點擊上方按鈕，進入最新版 Releases。
-2. 下載 `PingVault-Setup-1.0.0.exe`。
+2. 下載 `PingVault-Setup.exe`。
 3. 執行安裝程式並依照精靈完成安裝。
 4. 啟動 PingVault；UAC 出現時按「是」。
 
@@ -82,7 +82,7 @@ powershell -ExecutionPolicy Bypass -File scripts\build_installer.ps1
 輸出位置：
 
 ```text
-dist\installer\PingVault-Setup-1.0.0.exe
+dist\installer\PingVault-Setup.exe
 ```
 
 只產生免安裝版本：

@@ -17,7 +17,8 @@ DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
 OutputDir=..\dist\installer
-OutputBaseFilename=PingVault-Setup-{#MyAppVersion}
+; Keep the asset name stable so README's latest-download URL survives upgrades.
+OutputBaseFilename=PingVault-Setup
 SetupIconFile=..\pingvault\assets\pingvault.ico
 UninstallDisplayIcon={app}\{#MyAppExeName}
 Compression=lzma2/ultra64
